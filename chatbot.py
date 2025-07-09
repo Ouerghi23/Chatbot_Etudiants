@@ -7,7 +7,7 @@ import os
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Charger la clé API depuis .env
+# Charger la clé
 load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
 
