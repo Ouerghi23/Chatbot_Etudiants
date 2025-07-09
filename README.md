@@ -68,16 +68,6 @@ streamlit run chatbot.py
 - "Y a-t-il une corrélation entre les absences et les notes ?"
 - "Quels sont les facteurs qui influencent le plus les performances ?"
 
-## 🤝 Contribution
-
-Les contributions sont les bienvenues ! N'hésitez pas à :
-- Ouvrir des issues pour signaler des bugs
-- Proposer des améliorations
-- Soumettre des pull requests
-
-## 📝 Licence
-
-Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
 ## 👨‍💻 Auteur
 
