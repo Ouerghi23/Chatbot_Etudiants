@@ -21,8 +21,8 @@ Un projet Streamlit + LangChain + OpenAI qui permet d'analyser un dataset `.csv`
 
 ### 1. Cloner le repository
 ```bash
-git clone https://github.com/Ouerghi32/chatbot-etudiant-csv.git
-cd chatbot-etudiant-csv
+git clone https://github.com/Ouerghi23/Chatbot_Etudiants.git
+cd Chatbot_Etudiants
 ```
 
 ### 2. Installer les dépendances
