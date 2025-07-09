@@ -24,7 +24,7 @@ st.title("🎓 Chatbot Analyse Étudiants")
 
 # Message de bienvenue
 st.markdown("👋 **Bienvenue !** Je suis votre assistant pour explorer le fichier `student-mat.csv`.")
-st.markdown("📌 Posez-moi des questions comme : *Quelle est la moyenne de G3 ?* ou *Combien d'élèves vivent en zone rurale ?*")
+st.markdown(" Posez-moi des questions !")
 
 # Zone de saisie utilisateur (Chatbot)
 query = st.text_input("💬 Votre question")
@@ -38,22 +38,22 @@ if query:
         st.warning("👋 Merci pour votre visite. À bientôt !")
     
     else:
-        with st.spinner("🧠 Traitement en cours..."):
+        with st.spinner(" Traitement en cours..."):
             try:
                 result = agent.run(query)
                 st.success(result)
             except Exception as e:
-                st.error(f"❌ Erreur : {e}")
+                st.error(f" Erreur : {e}")
 
 
 # Séparation visuelle
 st.markdown("---")
 
 # SECTION VISUALISATION
-st.subheader("📊 Visualisation des données")
+st.subheader("Visualisation des données")
 
 # Histogramme simple
-colonne = st.selectbox("📌 Choisis une colonne numérique à visualiser :", 
+colonne = st.selectbox(" Choisis une colonne numérique à visualiser :", 
                        options=["G1", "G2", "G3", "absences", "age", "health", "studytime", "goout", "Dalc", "Walc"])
 
 if colonne:
@@ -63,10 +63,8 @@ if colonne:
     st.pyplot(fig1)
 
 # Boxplot comparatif par sexe
-st.subheader("🎯 Comparaison des élèves par sexe")
-
-selected_feature = st.selectbox("🎓 Quelle variable comparer selon le sexe ?", ["G1", "G2", "G3", "absences", "studytime"])
-
+st.subheader("Comparaison des élèves par sexe")
+selected_feature = st.selectbox("Quelle variable comparer selon le sexe ?", ["G1", "G2", "G3", "absences", "studytime"])
 fig2, ax2 = plt.subplots()
 sns.boxplot(x="sex", y=selected_feature, data=df, ax=ax2, palette="pastel")
 ax2.set_title(f"{selected_feature} selon le sexe")
